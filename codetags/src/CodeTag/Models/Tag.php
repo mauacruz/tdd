@@ -14,4 +14,7 @@ class Tag extends Model {
         'Name'
     ];
 
+    public function categorizable(){
+        return $this->morphTo();
+    }
 }
